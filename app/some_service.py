@@ -2,7 +2,7 @@ import time
 
 
 class SomeService:
-    def service_call(self, number):
+    def service_call(self, number: float) -> float:
         # going into db looong complex processing
         time.sleep(3)
         return f"{number}"
