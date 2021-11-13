@@ -11,8 +11,8 @@ run:
 	python3 -m app
 
 check-linting:
-	cd src; mypy --strict .
-	cd src; find . -name *.py | xargs pylint
+	mypy --strict .
+	find . -name *.py | xargs pylint
 
 test:
-	cd src; pytest -v ./tests
+	pytest -v ./tests/*
